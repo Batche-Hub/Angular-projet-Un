@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { APPAREILS } from '../mock-appareils';
 
 
@@ -10,10 +10,11 @@ import { APPAREILS } from '../mock-appareils';
 export class AppareilsComponent implements OnInit {
 
   appareils = APPAREILS;
+  @Input() utilite = 'A définir';
 
 constructor() { }
 
-ngOnInit() {
+ngOnInit(): void {
   }
 
 }

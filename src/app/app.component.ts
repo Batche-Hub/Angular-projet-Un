@@ -19,7 +19,6 @@ export class AppComponent{
   }
 
   onAllumer(): void {
-
     console.log('Appareils allumés !');
   }
 }
